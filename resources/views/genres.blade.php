@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset='utf-8'>
-    <title>Genres</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-</head>
-
-<body>
+@extends('layout')
+@section('title', 'Genres')
+@section('main')
     <table class='table'>
         <tr>
             <th>Genres</th>
@@ -18,10 +11,9 @@
             <a href='tracks?genre={{urlencode($genre->Name)}}'>{{$genre->Name}}</a>
             </td>
             <td>
+            <a href='/genres/{{$genre->GenreId}}/edit'>Edit</a>
             </td>
         </tr>
         @endforeach
     </table>
-</body>
-
-</html>
+@endsection

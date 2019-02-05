@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Tracks</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-</head>
-
-<body>
+@extends('layout')
+@section('title', 'Tracks')
+@section('main')
     <table class='table'>
-    <tr><th></th></tr>
+    <a href="/tracks/new">Add Track</a>
+    <tr><th>{{$genreName}} Songs</th></tr>
         <tr>
             <th>Title</th>
             <th>Artist</th>
@@ -33,6 +27,4 @@
         </tr>
         @endforeach
     </table>
-</body>
-
-</html>
+@endsection
