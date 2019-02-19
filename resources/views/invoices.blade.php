@@ -1,5 +1,5 @@
 @extends('layout')
-@title('title', 'Invoices')
+@section('title', 'Invoices')
 @section('main')
   <form action="index.php" method="get">
     <input type="text" name="search" value="{{$search}}">
