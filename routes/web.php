@@ -38,3 +38,4 @@ Route::get('/logout', 'LoginController@logout');
 
 
 Route::get('/maintenance', 'MaintenanceController@maintenance');
+Route::get('/docs', 'DocsController@index');
